@@ -7,11 +7,11 @@ const playGame = function(arg) {
   const getMoveName = function(moveId){
 
     if(moveId === 1){
-      return 'kamieÒ';
+      return 'kamie≈Ñ';
     } else if (moveId === 2) {
       return 'papier';
     } else if (moveId === 3) {
-      return 'noøyce'
+      return 'no≈ºyce'
     }
 
     printMessage('Nie znam ruchu o id ' + moveId + '.');
@@ -19,11 +19,11 @@ const playGame = function(arg) {
   }
 
   function displayResult(computerMove, playerMove){
-    printMessage('Zagra≥em ' + computerMove + ', a Ty ' + playerMove);
+    printMessage('Zagra≈Çem ' + computerMove + ', a Ty ' + playerMove);
 
-    if ((computerMove === 'kamieÒ' && playerMove === 'papier') ||
-       (computerMove === 'papier' && playerMove === 'noøyce') ||
-       (computerMove === 'noøyce' && playerMove === 'kamieÒ')) 
+    if ((computerMove === 'kamie≈Ñ' && playerMove === 'papier') ||
+       (computerMove === 'papier' && playerMove === 'no≈ºyce') ||
+       (computerMove === 'no≈ºyce' && playerMove === 'kamie≈Ñ')) 
         printMessage('Ty wygrywasz!');
     else if (computerMove == playerMove) printMessage('Remis!');
     else printMessage('Ja wygrywam!'); 
@@ -39,12 +39,12 @@ const playGame = function(arg) {
 
   // Ruch komputera 
   let computerMove = getMoveName(randomNumber);
-  // printMessage('MÛj ruch to: ' + computerMove);
+  // printMessage('M√≥j ruch to: ' + computerMove);
 
   // Ruch gracza
-  // let playerInput = prompt('Wybierz swÛj ruch! 1: kamieÒ, 2: papier, 3: noøyce.');
+  // let playerInput = prompt('Wybierz sw√≥j ruch! 1: kamie≈Ñ, 2: papier, 3: no≈ºyce.');
   let playerMove = getMoveName(playerInput);
-  // printMessage('TwÛj ruch to: ' + playerMove);
+  // printMessage('Tw√≥j ruch to: ' + playerMove);
 
   // wynik gry
   displayResult(computerMove,playerMove);
